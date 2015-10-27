@@ -1,0 +1,44 @@
+Sub ExportMyPicture()
+    Dim output_folder As String
+    With Application.FileDialog(msoFileDialogFolderPicker)
+      .AllowMultiSelect = False
+      .Show
+      On Error Resume Next
+      output_folder = .SelectedItems(1)
+      Err.Clear
+      On Error GoTo 0
+    End With
+    
+    Dim Column_number As Integer
+    Column_number = InputBox("Column Number where names of images are stored:")
+
+    For Each image In ActiveSheet.Shapes
+        image_name = ActiveSheet.Cells(image.TopLeftCell.Row, Column_number).Value
+        image.Select
+        With Selection.ShapeRange
+            .Fill.Visible = msoFalse
+            .Line.Visible = msoFalse
+            .Rotation = 0#
+            .ScaleHeight 1#, msoTrue, msoScaleFromTopLeft
+            .ScaleWidth 1#, msoTrue, msoScaleFromTopLeft
+        End With
+        With Selection.ShapeRange.PictureFormat
+            .CropLeft = 0#
+            .CropRight = 0#
+            .CropBottom = 0#
+            .CropTop = 0#
+            .TransparentBackground = msoFalse
+        End With
+        Application.Selection.CopyPicture
+        Set img_dimension = ActiveSheet.ChartObjects.Add(0, 0, image.Width, image.Height)
+        Set img_area = img_dimension.Chart
+        img_dimension.Activate
+        With img_area
+            .ChartArea.Select
+            .Paste
+            .Export (output_folder & "\" & image_name & ".jpg")
+        End With
+        img_dimension.Delete
+    Next
+End Sub
+
