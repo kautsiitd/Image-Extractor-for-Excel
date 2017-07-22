@@ -27,6 +27,19 @@ That's it, Now all your images would be extracted in selected folder and named a
 
 ![alt tag](https://github.com/kautsiitd/Image-Extractor-for-Excel/blob/master/Flow-Chart.png)
 
+## Motivation
+
+When our pro dashboard was not developed, vendors and professionals generally uploaded their photos to our bucket through two ways, either they attach their photos in excel file or send us link of some drop-box where all images are saved and send a separate excel file in which whole information was given. Second process was easy to images as we needed to extract images from link provided in excel and upload them to server with whole provided information. But first one required a lot of work.
+
+Excel do not provide a direct option to save images, so they needed to go through following process:
+
+1. Copy image.
+2. Open Paint and Paste image
+3. Resize Image to remove blank white portion Save image
+4. Close paint and come back to excel
+
+This process was not only laborious but also was very time consuming for operations team. So there was a need to automate this process so that members need to click only one button in excel and images would be extracted to destination folder.
+
 ## Need Help/Issues
 
 If you find some issue or require some help then you can report about it here: https://github.com/kautsiitd/Image-Extractor-for-Excel/issues.
