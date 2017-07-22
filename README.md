@@ -29,4 +29,4 @@ That's it, Now all your images would be extracted in selected folder and named a
 
 ## Need Help/Issues
 
-If you find some issue or require some help then you can report about it here: [link]{https://github.com/kautsiitd/Image-Extractor-for-Excel/issues}.
+If you find some issue or require some help then you can report about it here: https://github.com/kautsiitd/Image-Extractor-for-Excel/issues.
