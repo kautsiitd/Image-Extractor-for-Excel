@@ -45,4 +45,4 @@ This process was not only laborious but also was very time consuming for operati
 
 ## Need Help/Issues
 
-If you find some issue or require some help then you can report about it in [Issues] (https://github.com/kautsiitd/Image-Extractor-for-Excel/issues).
+If you find some issue or require some help then you can report about it in [Issues](https://github.com/kautsiitd/Image-Extractor-for-Excel/issues).
