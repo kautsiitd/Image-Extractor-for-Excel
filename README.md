@@ -13,7 +13,7 @@ Hence It will save all Images present in excel file. More functionality can be a
 ## Installation
 
 1. You can either directly download zip file from above or you can also run *git clone https://github.com/kautsiitd/Image-Extractor-for-Excel.git* in terminal to clone this repo.
-2. You can follow steps here: http://www.excel-easy.com/vba/create-a-macro.html to create a macro in excel, and just copy paste text in Macro.text.
+2. You can follow steps here: http://www.excel-easy.com/vba/create-a-macro.html to create a macro in excel, and just copy paste text in [Macro.txt](Macro.txt).
 3. You can create a shortcut button in ribbon or in quick access bar to run macro in just one click. You can follow steps here for same: https://support.office.com/en-us/article/Assign-a-macro-to-a-button-728c83ec-61d0-40bd-b6ba-927f84eb5d2c
 4. After button is added in ribbon or in quick access bar, you can follow steps in **How It Works** to run macro on desired excel file and extract images. 🙂
 
@@ -28,7 +28,7 @@ It is simple 3 click process by which you can extract all the images in a select
 
 That's it, Now all your images would be extracted in selected folder and named accordingly. You can follow below flow chart for better understanding of how it works.
 
-![alt tag](https://github.com/kautsiitd/Image-Extractor-for-Excel/blob/master/Flow-Chart.png)
+![alt tag](Flow-Chart.png)
 
 ## Motivation
 
@@ -45,4 +45,4 @@ This process was not only laborious but also was very time consuming for operati
 
 ## Need Help/Issues
 
-If you find some issue or require some help then you can report about it here: https://github.com/kautsiitd/Image-Extractor-for-Excel/issues.
+If you find some issue or require some help then you can report about it in [Issues] (https://github.com/kautsiitd/Image-Extractor-for-Excel/issues).
